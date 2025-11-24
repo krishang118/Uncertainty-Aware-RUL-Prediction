@@ -1,6 +1,6 @@
 # Uncertainty-Aware Deep Learning for Turbofan Engine RUL Prediction
 
-A novel deep learning framework for Remaining Useful Life (RUL) prediction in turbofan engines that learns aleatoric uncertainty directly through probabilistic modeling—achieving breakthrough critical zone performance with RMSE of 5-7 cycles for RUL ≤ 30.
+A novel deep learning framework for Remaining Useful Life (RUL) prediction in turbofan engines that learns aleatoric uncertainty directly through probabilistic modeling, achieving breakthrough critical zone performance with RMSE of 5-7 cycles for RUL ≤ 30.
 
 ## Overview
 
