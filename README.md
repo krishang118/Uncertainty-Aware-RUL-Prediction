@@ -42,3 +42,11 @@ Our framework achieves competitive overall RMSE of 16.22, 19.29, 16.84, and 19.9
 pip install tensorflow numpy pandas scikit-learn matplotlib pywavelets ruptures
 ```
 3. Open and execute the Jupyter Notebook `CMAPSS RUL Prediction.ipynb` which contains the complete end-to-end pipeline from data loading through training to evaluation and visualization. By default, in the main method, the data subset is set to FD001, which can be easily changed to FD002, FD003, or FD004.
+
+## Contributing
+
+Contributions are welcome!
+
+## License
+
+Distributed under the MIT License. 
