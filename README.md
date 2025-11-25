@@ -32,7 +32,7 @@ While recent methods working with the CMAPSS dataset like TMSCNN achieve lower o
 
 ## Performance
 
-Our framework achieves competitive overall RMSE of 16.22, 19.29, 16.84, and 19.98 on FD001-FD004 respectively. Most significantly, new benchmarks are established for safety-critical predictions with critical zone RMSE (RUL ≤ 30) of 5.14, 6.89, 5.27, and 7.16 cycles, representing 25-40% improvements over conventional approaches. The learned uncertainty provides well-calibrated confidence intervals enabling risk-aware maintenance scheduling previously unattainable in CMAPSS literature.
+The framework achieves competitive overall RMSE of 16.22, 19.29, 16.84, and 19.98 on FD001-FD004 respectively. Most significantly, new benchmarks are established for safety-critical predictions with critical zone RMSE (RUL ≤ 30) of 5.14, 6.89, 5.27, and 7.16 cycles, representing 25-40% improvements over conventional approaches. The learned uncertainty provides well-calibrated confidence intervals enabling risk-aware maintenance scheduling previously unattainable in CMAPSS literature.
 
 ## How To Run
 
