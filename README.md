@@ -12,19 +12,19 @@ The pipeline is evaluated on all four NASA CMAPSS benchmark subsets which depict
 
 ## Features
 
-- Breakthrough Critical Zone Performance — Achieves 5-7 cycle RMSE for RUL ≤ 30, representing 25-40% improvement over existing methods
-- Learned Uncertainty Quantification — Bayesian output layer provides well-calibrated 95% confidence intervals with 93.5-95.2% actual coverage
-- Dual-Level Attention — Simultaneous sensor and temporal attention for comprehensive feature extraction
-- Multi-Scale Temporal Modeling — Inception blocks with parallel convolutions capture patterns at multiple timescales
-- Condition-Aware Processing — K-means clustering and regime-specific normalization for multi-modal operating conditions
-- Intelligent Preprocessing — Wavelet denoising achieving 15-25 dB SNR improvement and correlation-based feature selection
+- Breakthrough Critical Zone Performance: Achieves 5-7 cycle RMSE for RUL ≤ 30, representing 25-40% improvement over existing methods
+- Learned Uncertainty Quantification: Bayesian output layer provides well-calibrated 95% confidence intervals with 93.5-95.2% actual coverage
+- Dual-Level Attention: Simultaneous sensor and temporal attention for comprehensive feature extraction
+- Multi-Scale Temporal Modeling: Inception blocks with parallel convolutions capture patterns at multiple timescales
+- Condition-Aware Processing: K-means clustering and regime-specific normalization for multi-modal operating conditions
+- Intelligent Preprocessing: Wavelet denoising achieving 15-25 dB SNR improvement and correlation-based feature selection
 
 ## Key Innovations
 
-- Dual-Level Attention Mechanism — Our novel attention operates simultaneously on sensor and temporal dimensions with learnable fusion weights, enabling the model to dynamically identify which sensors are relevant at each degradation state and which time steps are most predictive.
-- Bayesian Uncertainty Quantification — The output layer simultaneously predicts mean RUL and log-variance, learning when predictions should be uncertain versus confident. This enables maintenance planners to make risk-aware decisions scheduling immediate inspections for high-uncertainty critical predictions.
-- RUL-Aware Loss Weighting — Critical samples receive 2.5× higher weight during training, concentrating model capacity on safety-critical zones. This design philosophy recognizes that prediction errors are not equally consequential.
-- Condition-Aware Processing — K-means clustering on operational settings enables regime-specific normalization, preventing cross-regime interference where identical sensor values may indicate different degradation states under different flight conditions.
+- Dual-Level Attention Mechanism: Our novel attention operates simultaneously on sensor and temporal dimensions with learnable fusion weights, enabling the model to dynamically identify which sensors are relevant at each degradation state and which time steps are most predictive.
+- Bayesian Uncertainty Quantification: The output layer simultaneously predicts mean RUL and log-variance, learning when predictions should be uncertain versus confident. This enables maintenance planners to make risk-aware decisions scheduling immediate inspections for high-uncertainty critical predictions.
+- RUL-Aware Loss Weighting: Critical samples receive 2.5× higher weight during training, concentrating model capacity on safety-critical zones. This design philosophy recognizes that prediction errors are not equally consequential.
+- Condition-Aware Processing: K-means clustering on operational settings enables regime-specific normalization, preventing cross-regime interference where identical sensor values may indicate different degradation states under different flight conditions.
 
 ## Comparison with State-of-the-Art
 
