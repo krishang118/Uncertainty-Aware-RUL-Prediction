@@ -1,10 +1,10 @@
 # Uncertainty-Aware Deep Learning for Turbofan Engine RUL Prediction
 
-A novel deep learning framework for Remaining Useful Life (RUL) prediction in turbofan engines that learns aleatoric uncertainty directly through probabilistic modeling, achieving breakthrough critical zone performance with RMSE of 5-7 cycles for RUL ≤ 30.
+A novel deep learning framework for Remaining Useful Life (RUL) prediction in turbofan engines that learns aleatoric uncertainty directly through probabilistic modeling, achieving first reported critical zone performance with RMSE of 5-7 cycles for RUL ≤ 30.
 
 ## Overview
 
-This framework addresses critical limitations in the current literature by combining hierarchical deep learning with Bayesian uncertainty quantification. The architecture synergistically integrates multi-scale Inception blocks for temporal pattern extraction, bidirectional LSTM for sequential modeling, and a novel dual-level attention mechanism operating simultaneously on sensor and temporal dimensions. The innovation lies in the Bayesian output layer that predicts both mean RUL and variance, enabling the model to learn data-inherent uncertainty, an approach unexplored in existing CMAPSS literature.
+This framework addresses critical limitations in the current literature by combining hierarchical deep learning with Bayesian uncertainty quantification. The architecture integrates multi-scale Inception blocks for temporal pattern extraction, bidirectional LSTM for sequential modeling, and a novel dual-level attention mechanism operating simultaneously on sensor and temporal dimensions. The innovation lies in the Bayesian output layer that predicts both mean RUL and variance, enabling the model to learn data-inherent uncertainty, an approach unexplored in existing CMAPSS literature.
 
 ### Dataset
 
@@ -12,12 +12,12 @@ The pipeline is evaluated on all four NASA CMAPSS benchmark subsets which depict
 
 ## Features
 
-- Breakthrough Critical Zone Performance: Achieves 5-7 cycle RMSE for RUL ≤ 30, representing 25-40% improvement over existing methods
+- First Reported Critical Zone Performance: Achieves 5-7 cycle RMSE for RUL ≤ 30, filling a critical gap in safety-critical prognostics evaluation
 - Learned Uncertainty Quantification: Bayesian output layer provides well-calibrated 95% confidence intervals with 93.5-95.2% actual coverage
 - Dual-Level Attention: Simultaneous sensor and temporal attention for comprehensive feature extraction
 - Multi-Scale Temporal Modeling: Inception blocks with parallel convolutions capture patterns at multiple timescales
 - Condition-Aware Processing: K-means clustering and regime-specific normalization for multi-modal operating conditions
-- Intelligent Preprocessing: Wavelet denoising achieving 15-25 dB SNR improvement and correlation-based feature selection
+- Advanced Preprocessing: Wavelet denoising achieving 15-25 dB SNR improvement and correlation-based feature selection
 
 ## Key Innovations
 
@@ -28,11 +28,11 @@ The pipeline is evaluated on all four NASA CMAPSS benchmark subsets which depict
 
 ## Comparison with State-of-the-Art
 
-While recent methods working with the CMAPSS dataset like TMSCNN achieve lower overall RMSE (14.79, 14.25) on complex subsets of the CMAPSS dataset and transformers excel on the simpler subsets (11.36 RMSE), our framework offers unique capabilities unavailable in existing approaches: learned uncertainty quantification with calibrated confidence intervals, breakthrough critical zone accuracy where safety matters most, and computational efficiency suitable for real-time edge deployment. 
+While recent methods working with the CMAPSS dataset like TMSCNN achieve lower overall RMSE (14.79, 14.25) on complex subsets and transformers excel on the simpler subsets (11.36 RMSE), our framework offers unique capabilities unavailable in existing approaches: learned uncertainty quantification with calibrated confidence intervals, first reported critical zone accuracy where safety matters most, and computational efficiency (220K parameters) suitable for real-time edge deployment. 
 
 ## Performance
 
-The framework achieves competitive overall RMSE of 16.22, 19.29, 16.84, and 19.98 on FD001-FD004 respectively. Most significantly, new benchmarks are established for safety-critical predictions with critical zone RMSE (RUL ≤ 30) of 5.14, 6.89, 5.27, and 7.16 cycles, representing 25-40% improvements over conventional approaches. The learned uncertainty provides well-calibrated confidence intervals enabling risk-aware maintenance scheduling previously unattainable in CMAPSS literature.
+The framework achieves competitive overall RMSE of 16.22, 19.29, 16.84, and 19.98 on FD001-FD004 respectively. Most significantly, this work establishes the first reported benchmarks for safety-critical predictions with critical zone RMSE (RUL ≤ 30) of 5.14, 6.89, 5.27, and 7.16 cycles. While existing literature reports overall RMSE ranging from 11-30, no prior work evaluates or reports critical zone performance separately. The learned uncertainty provides well-calibrated confidence intervals enabling risk-aware maintenance scheduling previously unattainable in CMAPSS literature.
 
 ## How To Run
 
